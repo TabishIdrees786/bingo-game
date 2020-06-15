@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
+    <style>
+        .butt {
+            display: block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 50px;
+            height: 20px;
+            margin: 5px auto;
+            text-decoration: none;
+            background-color: blanchedalmond;
+            color: black;
+            padding: 5px;
+        }
+    </style>
 
 </head>
 
 <body align="center" bgcolor="#808000">
     <div border="2px">
         <h1>Bingoo Game</h1>
-        <script>
-            var a = prompt("Enter Number 0-9");
-            var b = Math.random() * 10;
-            b = Math.floor(b);
-
-            if (+a === b) {
-                document.write("You Win Bingoooo <br>")
-            } else if (+a === b + 1 || +a === b - 1) {
-                document.write("Your Number are very Close " + "<br>")
-            } else {
-                document.write("You Lose <br>")
-            }
-            document.write("Number is " + b)
-        </script>
+        <script src="app.js"></script>
+        <a href="index.html" class="butt">Restart</a>
     </div>
 </body>
 
